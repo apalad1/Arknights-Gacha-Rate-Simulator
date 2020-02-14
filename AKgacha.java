@@ -43,8 +43,8 @@ public class AKgacha {
 	public static int rarity(int x, int roll_counter) {
 		
 		//*****PITY COUNTER INCREASE if rollcounter is 51 or higher*********************************
-		if(rollcounter>=3) {
-			int pitycounter = rollcounter - 2;
+		if(rollcounter>=51) {
+			int pitycounter = rollcounter - 50;
 			x = x - (pitycounter*2);
 			System.out.println("6* rate up increase!!! " + (2+(pitycounter*2)) + "%");
 		}else {
